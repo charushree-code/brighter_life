@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/transparent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:id="@+id/addNoteContent"
+        android:layout_width="619dp"
+        android:layout_height="492dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="#313435"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="write your feeling at this moment"
+        android:inputType="textMultiLine"
+        android:textColor="#E8DFDF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/frustrated"
+        android:layout_width="108dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#F1EAEA"
+        app:layout_constraintBottom_toTopOf="@+id/addNoteContent"
+        app:layout_constraintEnd_toStartOf="@+id/sad"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/frustrated" />
+
+    <ImageView
+        android:id="@+id/happy"
+        android:layout_width="80dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="#F1EAEA"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/addNoteContent"
+        app:layout_constraintEnd_toStartOf="@+id/stressed"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageView
+        android:id="@+id/sad"
+        android:layout_width="111dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#F1EAEA"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/addNoteContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/sad" />
+
+    <ImageView
+        android:id="@+id/stressed"
+        android:layout_width="88dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="#F1EAEA"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/addNoteContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/stressed" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="how are you feeling now?"
+        android:textAlignment="viewStart"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/addNoteContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="324dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

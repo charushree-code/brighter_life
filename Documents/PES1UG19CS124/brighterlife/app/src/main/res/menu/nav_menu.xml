@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="general">
+        <menu>
+            <item
+                android:id="@+id/notes"
+                android:icon="@drawable/note"
+                android:title="JOURNAL" />
+            <item
+                android:id="@+id/add"
+                android:icon="@drawable/note_add"
+                android:title="ADD NEW PAGE " />
+            <item
+                android:id="@+id/sync"
+                android:icon="@drawable/ic_baseline_sync_24"
+                android:title="SYNC" />
+        </menu>
+    </item>
+    <item android:title="Logout">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_logout_24"
+                android:title="logout" />
+        </menu>
+    </item>
+</menu>

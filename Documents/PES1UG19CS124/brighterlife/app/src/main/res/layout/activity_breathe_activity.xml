@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_flower"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/flower_pink" />
+
+    <TextView
+        android:id="@+id/tv_breathsTaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:text="5 breaths" />
+
+    <TextView
+        android:id="@+id/tv_lastBreath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="30dp"
+        android:text="Last at 9:45 pm" />
+
+    <TextView
+        android:id="@+id/tv_todayMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="30dp"
+        android:text="25 minutes" />
+
+    <TextView
+        android:id="@+id/tv_oneMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="270dp"
+        android:text="1 MIN" />
+
+    <TextView
+        android:id="@+id/tv_breathe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:text="Breathe"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="700dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:text="START" />
+
+</RelativeLayout>
